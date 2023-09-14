@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UX/UI on Learning w/ Swift</title>
+    <link>//coryjpopp.com/tags/ux/ui/</link>
+    <description>Recent content in UX/UI on Learning w/ Swift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="//coryjpopp.com/tags/ux/ui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Live Updates Animation</title>
+      <link>//coryjpopp.com/posts/live-updates-animation/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/live-updates-animation/</guid>
+      <description>I came across a simple yet beautiful animation in the New York Times app the other day denoting their live updates feed.
+It has three dots, all with different shades of red, alternating to imply to the user that changes to the story are happening rapidly in real time.
+I always love challenging myself to get better at animations within SwiftUI, so I set out to recreate this cool little design.</description>
+    </item>
+    
+  </channel>
+</rss>

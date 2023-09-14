@@ -6,11 +6,33 @@
     <description>Recent content in Swift on Learning w/ Swift</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Live Updates Animation</title>
+      <link>//coryjpopp.com/posts/live-updates-animation/</link>
+      <pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/live-updates-animation/</guid>
+      <description>I came across a simple yet beautiful animation in the New York Times app the other day denoting their live updates feed.
+It has three dots, all with different shades of red, alternating to imply to the user that changes to the story are happening rapidly in real time.
+I always love challenging myself to get better at animations within SwiftUI, so I set out to recreate this cool little design.</description>
+    </item>
+    
+    <item>
+      <title>Swipe to delete from lists in SwiftUI</title>
+      <link>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</link>
+      <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</guid>
+      <description>SwiftUI includes a native solution for a swipe to delete function from within lists, which works exactly as you would expect with just a few lines of additional code.
+The code itself is simple, and involves us creating a ForEach of our array within our list, and adding a .onDelete modifier to trigger the removeItems function that we have created below our view body.
+💡 It’s important to note that our .</description>
+    </item>
+    
     <item>
       <title>Adding Transparency to Sheets in SwiftUI</title>
       <link>//coryjpopp.com/posts/adding-transparency-to-sheets-in-swiftui/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>//coryjpopp.com/posts/adding-transparency-to-sheets-in-swiftui/</guid>
       <description>Native sheets in iOS are by default opaque, and require a bit of extra code to enable any form of transparency.
@@ -21,23 +43,12 @@ struct BackgroundClearView: UIViewRepresentable { func makeUIView(context: Conte
     <item>
       <title>How I Landed My First iOS Job</title>
       <link>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
+      <pubDate>Fri, 14 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</guid>
       <description>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
 I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
 Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning.</description>
-    </item>
-    
-    <item>
-      <title>Swipe to delete from lists in SwiftUI</title>
-      <link>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</link>
-      <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
-      
-      <guid>//coryjpopp.com/posts/swipe-to-delete-from-lists-in-swiftui/</guid>
-      <description>SwiftUI includes a native solution for a swipe to delete function from within lists, which works exactly as you would expect with just a few lines of additional code.
-The code itself is simple, and involves us creating a ForEach of our array within our list, and adding a .onDelete modifier to trigger the removeItems function that we have created below our view body.
-💡 It’s important to note that our .</description>
     </item>
     
   </channel>
