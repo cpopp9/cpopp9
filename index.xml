@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>//cpopp9.github.io/cpopp9/</link>
+    <link>//coryjpopp.com/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//cpopp9.github.io/cpopp9/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 09:03:20 -0800</lastBuildDate><atom:link href="//coryjpopp.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Landed My First iOS Job</title>
-      <link>//cpopp9.github.io/cpopp9/posts/how-i-landed-my-first-ios-job/</link>
+      <link>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</link>
       <pubDate>Sun, 20 Nov 2022 09:03:20 -0800</pubDate>
       
-      <guid>//cpopp9.github.io/cpopp9/posts/how-i-landed-my-first-ios-job/</guid>
+      <guid>//coryjpopp.com/posts/how-i-landed-my-first-ios-job/</guid>
       <description>About a year ago I started learning swift with absolutely zero prior programming experience, and recently landed my first job.
 I wanted to give back to this community and share my experience — what worked for me, and what didn’t. Feel free to ask my anything or share your own insights.
 Getting Started with iOS Paul Hudson has an excellent tutorial series called 100 Days of SwiftUI that starts at the absolute beginning.</description>
