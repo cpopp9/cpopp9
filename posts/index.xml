@@ -40,6 +40,17 @@ import SwiftUI struct ImageSlider: View { private let images = [&amp;#34;Barbie&
     </item>
     
     <item>
+      <title>Understanding Protocols in Swift</title>
+      <link>//coryjpopp.com/posts/understanding-protocols-in-swift/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/understanding-protocols-in-swift/</guid>
+      <description>Protocols in Swift allow us to create blueprints for how classes, structs and enums should work.
+They allow us to define exactly what properties and functions data types that conform to our protocol must contain to be valid. Types that conform to protocols can contain more than what is required, but must at least contain the bare minimum as defined in the protocol.
+They are useful for minimizing the amount of otherwise duplicate code within our data types, and guaranteeing that otherwise unrelated types play nicely together.</description>
+    </item>
+    
+    <item>
       <title>Unit Testing within Swift Playground</title>
       <link>//coryjpopp.com/posts/unit-testing-within-swift-playground/</link>
       <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>

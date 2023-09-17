@@ -55,7 +55,7 @@
   />
 
   
-  <title>Scrollable Gallaries in SwiftUI - Learning w/ Swift</title>
+  <title>Understanding Protocols in Swift - Learning w/ Swift</title>
 
   
   <meta name="theme-color" />
@@ -63,9 +63,10 @@
   
   
   
-  <meta name="description" content="TabView in SwiftUI makes creating scrolling galleries a breeze when combined with the optional .tabViewStyle(PageTabViewStyle()) modifier.
-In this example I overwrote the default appearance of the page indicators by running a simple function when the view appears so that the indicator dots are visible on a white background.
-import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;, &#34;Oppenheimer&#34;, &#34;Blue Beetle&#34;, &#34;Haunted Mansion&#34;, &#34;Mission Impossible&#34;] var body: some View { TabView { ForEach(images, id: \." />
+  <meta name="description" content="Protocols in Swift allow us to create blueprints for how classes, structs and enums should work.
+They allow us to define exactly what properties and functions data types that conform to our protocol must contain to be valid.
+Types that conform to protocols can contain more than what is required, but must at least contain the bare minimum as defined in the protocol.
+They are useful minimizing the amount of otherwise duplicate code within our data types, and guaranteeing that otherwise unrelated types play nicely together." />
   <meta name="author" content="Cory Popp" />
   
 
@@ -123,19 +124,21 @@ import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;
   
   
   
-  <meta itemprop="name" content="Scrollable Gallaries in SwiftUI">
-<meta itemprop="description" content="TabView in SwiftUI makes creating scrolling galleries a breeze when combined with the optional .tabViewStyle(PageTabViewStyle()) modifier.
-In this example I overwrote the default appearance of the page indicators by running a simple function when the view appears so that the indicator dots are visible on a white background.
-import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;, &#34;Oppenheimer&#34;, &#34;Blue Beetle&#34;, &#34;Haunted Mansion&#34;, &#34;Mission Impossible&#34;] var body: some View { TabView { ForEach(images, id: \."><meta itemprop="datePublished" content="2023-09-17T00:00:00+00:00" />
+  <meta itemprop="name" content="Understanding Protocols in Swift">
+<meta itemprop="description" content="Protocols in Swift allow us to create blueprints for how classes, structs and enums should work.
+They allow us to define exactly what properties and functions data types that conform to our protocol must contain to be valid.
+Types that conform to protocols can contain more than what is required, but must at least contain the bare minimum as defined in the protocol.
+They are useful minimizing the amount of otherwise duplicate code within our data types, and guaranteeing that otherwise unrelated types play nicely together."><meta itemprop="datePublished" content="2023-09-17T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2023-09-17T00:00:00+00:00" />
-<meta itemprop="wordCount" content="104">
-<meta itemprop="keywords" content="SwiftUI,UX/UI,Animation," />
+<meta itemprop="wordCount" content="128">
+<meta itemprop="keywords" content="Swift," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Scrollable Gallaries in SwiftUI"/>
-<meta name="twitter:description" content="TabView in SwiftUI makes creating scrolling galleries a breeze when combined with the optional .tabViewStyle(PageTabViewStyle()) modifier.
-In this example I overwrote the default appearance of the page indicators by running a simple function when the view appears so that the indicator dots are visible on a white background.
-import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;, &#34;Oppenheimer&#34;, &#34;Blue Beetle&#34;, &#34;Haunted Mansion&#34;, &#34;Mission Impossible&#34;] var body: some View { TabView { ForEach(images, id: \."/>
+<meta name="twitter:title" content="Understanding Protocols in Swift"/>
+<meta name="twitter:description" content="Protocols in Swift allow us to create blueprints for how classes, structs and enums should work.
+They allow us to define exactly what properties and functions data types that conform to our protocol must contain to be valid.
+Types that conform to protocols can contain more than what is required, but must at least contain the bare minimum as defined in the protocol.
+They are useful minimizing the amount of otherwise duplicate code within our data types, and guaranteeing that otherwise unrelated types play nicely together."/>
 
   
   
@@ -260,7 +263,7 @@ import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Scrollable Gallaries in SwiftUI</h1>
+    <h1 class="!my-0 pb-2.5">Understanding Protocols in Swift</h1>
 
     
     <div class="text-sm antialiased opacity-60">
@@ -274,35 +277,26 @@ import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;
     
   </header>
 
-  <section><p>TabView in SwiftUI makes creating scrolling galleries a breeze when combined with the optional .tabViewStyle(PageTabViewStyle()) modifier.</p>
-<p>In this example I overwrote the default appearance of the page indicators by running a simple function when the view appears so that the indicator dots are visible on a white background.</p>
-<p><img src="/ScrollableGalloriesSwiftUI.gif" alt="ScrollableGalloriesSwiftUI.gif"></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">SwiftUI</span>
+  <section><p>Protocols in Swift allow us to create blueprints for how classes, structs and enums should work.</p>
+<p>They allow us to define exactly what properties and functions data types that conform to our protocol must contain to be valid.</p>
+<p>Types that conform to protocols can contain more than what is required, but must at least contain the bare minimum as defined in the protocol.</p>
+<p>They are useful minimizing the amount of otherwise duplicate code within our data types, and guaranteeing that otherwise unrelated types play nicely together.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">protocol</span> <span style="color:#a6e22e">Purchaseable</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> name: String { <span style="color:#66d9ef">get</span> <span style="color:#66d9ef">set</span> }
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">ImageSlider</span>: View {
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">let</span> images = [<span style="color:#e6db74">&#34;Barbie&#34;</span>, <span style="color:#e6db74">&#34;Oppenheimer&#34;</span>, <span style="color:#e6db74">&#34;Blue Beetle&#34;</span>, <span style="color:#e6db74">&#34;Haunted Mansion&#34;</span>, <span style="color:#e6db74">&#34;Mission Impossible&#34;</span>]
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> body: some View {
-</span></span><span style="display:flex;"><span>        TabView {
-</span></span><span style="display:flex;"><span>            ForEach(images, id: <span style="color:#960050;background-color:#1e0010">\</span>.<span style="color:#66d9ef">self</span>) { item <span style="color:#66d9ef">in</span>
-</span></span><span style="display:flex;"><span>                Image(item)
-</span></span><span style="display:flex;"><span>                    .resizable()
-</span></span><span style="display:flex;"><span>                    .scaledToFit()
-</span></span><span style="display:flex;"><span>                    .padding(.horizontal)
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>        .frame(maxHeight: <span style="color:#ae81ff">650</span>)
-</span></span><span style="display:flex;"><span>        .tabViewStyle(PageTabViewStyle())
-</span></span><span style="display:flex;"><span>        .onAppear {
-</span></span><span style="display:flex;"><span>            setupAppearance()
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setupAppearance</span>() {
-</span></span><span style="display:flex;"><span>        UIPageControl.appearance().currentPageIndicatorTintColor = .black
-</span></span><span style="display:flex;"><span>        UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(<span style="color:#ae81ff">0.2</span>)
-</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Car</span>: Purchaseable {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> name: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> manufacturer: String
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Coffee</span>: Purchaseable {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> name: String
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> strength: Int
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">buy</span>(<span style="color:#66d9ef">_</span> item: Purchaseable) {
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;I&#39;m buying </span><span style="color:#e6db74">\(</span>item.name<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div></section>
 
@@ -312,20 +306,8 @@ import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;
      
     <a
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="//coryjpopp.com/tags/swiftui"
-      >SwiftUI</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="//coryjpopp.com/tags/ux/ui"
-      >UX/UI</a
-    >
-     
-    <a
-      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
-      href="//coryjpopp.com/tags/animation"
-      >Animation</a
+      href="//coryjpopp.com/tags/swift"
+      >Swift</a
     >
     
   </footer>
@@ -339,8 +321,8 @@ import SwiftUI struct ImageSlider: View { private let images = [&#34;Barbie&#34;
     
     <a
       class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="//coryjpopp.com/posts/circular-progress-animation/"
-      ><span class="mr-1.5">←</span><span>Circular Progress Animation</span></a
+      href="//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/"
+      ><span class="mr-1.5">←</span><span>Scrollable Gallaries in SwiftUI</span></a
     >
     
     
