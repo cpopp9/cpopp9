@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Learning w/ Swift</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic setup of a UIViewController in UIKit</title>
+      <link>//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/</guid>
+      <description>View Controllers in UIKit can best be described as containing one screen worth of information. Data, functions, UI - whatever the screen needs to be complete.
+When we create a new view controller it contains the following minimal code to get the screen up and running, and allows us to easily customize our screen how we want it from there.
+class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() // Do any additional setup after loading the view.</description>
+    </item>
+    
     <item>
       <title>Adding Constraints to Generics in Swift</title>
       <link>//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/</link>

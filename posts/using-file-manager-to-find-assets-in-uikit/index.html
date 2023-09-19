@@ -55,7 +55,7 @@
   />
 
   
-  <title>Adding Constraints to Generics in Swift - Learning w/ Swift</title>
+  <title>Basic setup of a UIViewController in UIKit - Learning w/ Swift</title>
 
   
   <meta name="theme-color" />
@@ -63,8 +63,9 @@
   
   
   
-  <meta name="description" content="Adding constraints to generics lets you narrow down what type of values you will be providing in your function while still maintaining the flexibility that generics allow.
-In this example, I&rsquo;ve added a constraint to Value that say whatever I pass in must conform to the Numeric protocol - meaning anything I pass to this function must be an array of integers, doubles, floats, or anything else that conforms to Numeric." />
+  <meta name="description" content="View Controllers in UIKit can best be described as containing one screen worth of information. Data, functions, UI - whatever the screen needs to be complete.
+When we create a new view controller it contains the following minimal code to get the screen up and running, and allows us to easily customize our screen how we want it from there.
+class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() // Do any additional setup after loading the view." />
   <meta name="author" content="Cory Popp" />
   
 
@@ -122,17 +123,19 @@ In this example, I&rsquo;ve added a constraint to Value that say whatever I pass
   
   
   
-  <meta itemprop="name" content="Adding Constraints to Generics in Swift">
-<meta itemprop="description" content="Adding constraints to generics lets you narrow down what type of values you will be providing in your function while still maintaining the flexibility that generics allow.
-In this example, I&rsquo;ve added a constraint to Value that say whatever I pass in must conform to the Numeric protocol - meaning anything I pass to this function must be an array of integers, doubles, floats, or anything else that conforms to Numeric."><meta itemprop="datePublished" content="2023-09-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-09-17T00:00:00+00:00" />
-<meta itemprop="wordCount" content="114">
-<meta itemprop="keywords" content="Swift," />
+  <meta itemprop="name" content="Basic setup of a UIViewController in UIKit">
+<meta itemprop="description" content="View Controllers in UIKit can best be described as containing one screen worth of information. Data, functions, UI - whatever the screen needs to be complete.
+When we create a new view controller it contains the following minimal code to get the screen up and running, and allows us to easily customize our screen how we want it from there.
+class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() // Do any additional setup after loading the view."><meta itemprop="datePublished" content="2023-09-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-09-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="209">
+<meta itemprop="keywords" content="Swift,UIKit," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Adding Constraints to Generics in Swift"/>
-<meta name="twitter:description" content="Adding constraints to generics lets you narrow down what type of values you will be providing in your function while still maintaining the flexibility that generics allow.
-In this example, I&rsquo;ve added a constraint to Value that say whatever I pass in must conform to the Numeric protocol - meaning anything I pass to this function must be an array of integers, doubles, floats, or anything else that conforms to Numeric."/>
+<meta name="twitter:title" content="Basic setup of a UIViewController in UIKit"/>
+<meta name="twitter:description" content="View Controllers in UIKit can best be described as containing one screen worth of information. Data, functions, UI - whatever the screen needs to be complete.
+When we create a new view controller it contains the following minimal code to get the screen up and running, and allows us to easily customize our screen how we want it from there.
+class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() // Do any additional setup after loading the view."/>
 
   
   
@@ -257,12 +260,12 @@ In this example, I&rsquo;ve added a constraint to Value that say whatever I pass
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">Adding Constraints to Generics in Swift</h1>
+    <h1 class="!my-0 pb-2.5">Basic setup of a UIViewController in UIKit</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Sep 17, 2023</time>
+      <time>Sep 19, 2023</time>
       
       
       
@@ -271,17 +274,21 @@ In this example, I&rsquo;ve added a constraint to Value that say whatever I pass
     
   </header>
 
-  <section><p>Adding constraints to generics lets you narrow down what type of values you will be providing in your function while still maintaining the flexibility that generics allow.</p>
-<p>In this example, I&rsquo;ve added a constraint to Value that say whatever I pass in must conform to the Numeric protocol - meaning anything I pass to this function must be an array of integers, doubles, floats, or anything else that conforms to Numeric.</p>
-<p>As long as whatever ever I pass in to this generic function conforms to Numeric, my function will be able to run successfully.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">count</span>&lt;Value: Numeric&gt;(values: [Value]) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> total = values.reduce(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">+</span>)
-</span></span><span style="display:flex;"><span>    print(total)
-</span></span><span style="display:flex;"><span>}
+  <section><p>View Controllers in UIKit can best be described as containing one screen worth of information. Data, functions, UI - whatever the screen needs to be complete.</p>
+<p>When we create a new view controller it contains the following minimal code to get the screen up and running, and allows us to easily customize our screen how we want it from there.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ViewController</span>: UIViewController {
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>count(values: [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>])
-</span></span><span style="display:flex;"><span>count(values: [<span style="color:#ae81ff">2.21</span>, <span style="color:#ae81ff">6.02</span>, <span style="color:#ae81ff">10.82</span>])
-</span></span></code></pre></div></section>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">viewDidLoad</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">super</span>.viewDidLoad()
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Do any additional setup after loading the view.</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The first part of the code says that we want to create a new class named ViewController, that conforms to UIViewController, which is Apple&rsquo;s default screen type in UIKit. This initial setup will create a blank white screen, which can later be customized with data and UI elements.</p>
+<p>Before anything will show up on screen, we need to call the method viewDidLoad(), which will load up our view and any data associated with it if it hasn&rsquo;t been loaded into memory yet.</p>
+<p>We can change Apple&rsquo;s default behavior from UIViewController by using the <code>override</code> keyword, and using super.viewDidLoad() underneath it to execute the UIViewController code before running anything else.</p>
+<p>Anything under <code>super.viewDidLoad()</code> can be used to furnish the rest of the screen with all of the information it needs.</p>
+</section>
 
   
   
@@ -291,6 +298,12 @@ In this example, I&rsquo;ve added a constraint to Value that say whatever I pass
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
       href="//coryjpopp.com/tags/swift"
       >Swift</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/uikit"
+      >UIKit</a
     >
     
   </footer>
@@ -302,17 +315,11 @@ In this example, I&rsquo;ve added a constraint to Value that say whatever I pass
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/"
-      ><span class="mr-1.5">←</span><span>Basic setup of a UIViewController in UIKit</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="//coryjpopp.com/posts/circular-progress-animation/"
-      ><span>Circular Progress Animation</span><span class="ml-1.5">→</span></a
+      href="//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/"
+      ><span>Adding Constraints to Generics in Swift</span><span class="ml-1.5">→</span></a
     >
     
   </nav>

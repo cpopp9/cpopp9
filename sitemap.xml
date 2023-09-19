@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/posts/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/tags/swift/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/tags/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//coryjpopp.com/tags/uikit/</loc>
+    <lastmod>2023-09-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,22 +29,10 @@
     <loc>//coryjpopp.com/posts/circular-progress-animation/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//coryjpopp.com/</loc>
-    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//coryjpopp.com/posts/</loc>
-    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//coryjpopp.com/tags/swift/</loc>
-    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//coryjpopp.com/tags/swiftui/</loc>
-    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//coryjpopp.com/tags/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//coryjpopp.com/posts/understanding-protocols-in-swift/</loc>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UIKit on Learning w/ Swift</title>
+    <link>//coryjpopp.com/tags/uikit/</link>
+    <description>Recent content in UIKit on Learning w/ Swift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/tags/uikit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic setup of a UIViewController in UIKit</title>
+      <link>//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/</link>
+      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/</guid>
+      <description>View Controllers in UIKit can best be described as containing one screen worth of information. Data, functions, UI - whatever the screen needs to be complete.
+When we create a new view controller it contains the following minimal code to get the screen up and running, and allows us to easily customize our screen how we want it from there.
+class ViewController: UIViewController { override func viewDidLoad() { super.viewDidLoad() // Do any additional setup after loading the view.</description>
+    </item>
+    
+  </channel>
+</rss>
