@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accessibility on Learning w/ Swift</title>
+    <link>//coryjpopp.com/tags/accessibility/</link>
+    <description>Recent content in Accessibility on Learning w/ Swift</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Easy accessibility with Dynamic Type</title>
+      <link>//coryjpopp.com/posts/easy-accessibility-with-dynamic-type/</link>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/easy-accessibility-with-dynamic-type/</guid>
+      <description>Dynamic type is an accessibility feature within iOS that allows users to adjust the size of text system-wide.
+Instead of hardcoding font sizes, developers can use the built in system fonts to match the settings of the user for optimal legibility.
+Examples of the system settings are:
+Title Headline Subheadline Body etc. In use:
+Text(&amp;#34;Hello World!&amp;#34;) .font(.title) </description>
+    </item>
+    
+  </channel>
+</rss>

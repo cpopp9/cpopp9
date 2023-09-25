@@ -55,7 +55,7 @@
   />
 
   
-  <title>The differences between Float, Double, and CGFloat - Learning w/ Swift</title>
+  <title>Easy accessibility with Dynamic Type - Learning w/ Swift</title>
 
   
   <meta name="theme-color" />
@@ -63,9 +63,11 @@
   
   
   
-  <meta name="description" content="Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
-The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
-Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy." />
+  <meta name="description" content="Dynamic type is an accessibility feature within iOS that allows users to adjust the size of text system-wide.
+Instead of hardcoding font sizes, developers can use the built in system fonts to match the settings of the user for optimal legibility.
+Examples of the system settings are:
+Title Headline Subheadline Body etc. In use:
+Text(&#34;Hello World!&#34;) .font(.title) " />
   <meta name="author" content="Cory Popp" />
   
 
@@ -123,19 +125,23 @@ Floats are more efficient on memory usage, yet are less precise. Doubles consume
   
   
   
-  <meta itemprop="name" content="The differences between Float, Double, and CGFloat">
-<meta itemprop="description" content="Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
-The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
-Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy."><meta itemprop="datePublished" content="2023-09-24T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2023-09-24T00:00:00+00:00" />
-<meta itemprop="wordCount" content="100">
-<meta itemprop="keywords" content="Swift," />
+  <meta itemprop="name" content="Easy accessibility with Dynamic Type">
+<meta itemprop="description" content="Dynamic type is an accessibility feature within iOS that allows users to adjust the size of text system-wide.
+Instead of hardcoding font sizes, developers can use the built in system fonts to match the settings of the user for optimal legibility.
+Examples of the system settings are:
+Title Headline Subheadline Body etc. In use:
+Text(&#34;Hello World!&#34;) .font(.title) "><meta itemprop="datePublished" content="2023-09-25T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-09-25T00:00:00+00:00" />
+<meta itemprop="wordCount" content="57">
+<meta itemprop="keywords" content="Swift,Accessibility," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The differences between Float, Double, and CGFloat"/>
-<meta name="twitter:description" content="Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
-The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
-Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy."/>
+<meta name="twitter:title" content="Easy accessibility with Dynamic Type"/>
+<meta name="twitter:description" content="Dynamic type is an accessibility feature within iOS that allows users to adjust the size of text system-wide.
+Instead of hardcoding font sizes, developers can use the built in system fonts to match the settings of the user for optimal legibility.
+Examples of the system settings are:
+Title Headline Subheadline Body etc. In use:
+Text(&#34;Hello World!&#34;) .font(.title) "/>
 
   
   
@@ -260,12 +266,12 @@ Floats are more efficient on memory usage, yet are less precise. Doubles consume
 
 <article>
   <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">The differences between Float, Double, and CGFloat</h1>
+    <h1 class="!my-0 pb-2.5">Easy accessibility with Dynamic Type</h1>
 
     
     <div class="text-sm antialiased opacity-60">
       
-      <time>Sep 24, 2023</time>
+      <time>Sep 25, 2023</time>
       
       
       
@@ -274,14 +280,20 @@ Floats are more efficient on memory usage, yet are less precise. Doubles consume
     
   </header>
 
-  <section><p>Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.</p>
-<p>The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:</p>
+  <section><p>Dynamic type is an accessibility feature within iOS that allows users to adjust the size of text system-wide.</p>
+<p>Instead of hardcoding font sizes, developers can use the built in system fonts to match the settings of the user for optimal legibility.</p>
+<p>Examples of the system settings are:</p>
 <ul>
-<li>Floats are more efficient on memory usage, yet are less precise.</li>
-<li>Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy.</li>
-<li>CGFloats primary usage is for graphics and UI code. Since Swift 5.5 and onwards CGFloat and Double&rsquo;s can be used interchangeably.</li>
+<li>Title</li>
+<li>Headline</li>
+<li>Subheadline</li>
+<li>Body</li>
+<li>etc.</li>
 </ul>
-</section>
+<p>In use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>Text(<span style="color:#e6db74">&#34;Hello World!&#34;</span>)
+</span></span><span style="display:flex;"><span>.font(.title)
+</span></span></code></pre></div></section>
 
   
   
@@ -291,6 +303,12 @@ Floats are more efficient on memory usage, yet are less precise. Doubles consume
       class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
       href="//coryjpopp.com/tags/swift"
       >Swift</a
+    >
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/accessibility"
+      >Accessibility</a
     >
     
   </footer>
@@ -302,17 +320,11 @@ Floats are more efficient on memory usage, yet are less precise. Doubles consume
   
   <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
     
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="//coryjpopp.com/posts/tuples-and-why-are-they-useful/"
-      ><span class="mr-1.5">←</span><span>What are tuples in Swift and when are they useful?</span></a
-    >
-    
     
     <a
       class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="//coryjpopp.com/posts/what-is-a-singleton-and-when-to-use-one/"
-      ><span>Singletons: what are they and when to use one</span><span class="ml-1.5">→</span></a
+      href="//coryjpopp.com/posts/tuples-and-why-are-they-useful/"
+      ><span>What are tuples in Swift and when are they useful?</span><span class="ml-1.5">→</span></a
     >
     
   </nav>
