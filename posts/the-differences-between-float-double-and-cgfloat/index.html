@@ -55,7 +55,7 @@
   />
 
   
-  <title>Posts - Learning w/ Swift</title>
+  <title>The differences between Float, Double, and CGFLoat - Learning w/ Swift</title>
 
   
   <meta name="theme-color" />
@@ -63,11 +63,9 @@
   
   
   
-  
-  <meta
-    name="description"
-    content="A personal blog"
-  />
+  <meta name="description" content="Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
+The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
+Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy." />
   <meta name="author" content="Cory Popp" />
   
 
@@ -79,6 +77,12 @@
   
   <link rel="preload stylesheet" as="style" href="//coryjpopp.com/main.min.css" />
 
+  
+  <script
+    defer
+    src="//coryjpopp.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
   
 
   
@@ -113,25 +117,25 @@
 
   
   
-  <link
-    rel="alternate"
-    type="application/rss&#43;xml"
-    href="//coryjpopp.com/posts/index.xml"
-    title="Learning w/ Swift"
-  />
-  
 
   
   
   
   
   
-  <meta itemprop="name" content="Posts">
-<meta itemprop="description" content="">
+  <meta itemprop="name" content="The differences between Float, Double, and CGFLoat">
+<meta itemprop="description" content="Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
+The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
+Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy."><meta itemprop="datePublished" content="2023-09-24T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2023-09-24T00:00:00+00:00" />
+<meta itemprop="wordCount" content="100">
+<meta itemprop="keywords" content="Swift," />
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="The differences between Float, Double, and CGFLoat"/>
+<meta name="twitter:description" content="Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
+The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
+Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy."/>
 
   
   
@@ -254,157 +258,67 @@
     >
       
 
+<article>
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">The differences between Float, Double, and CGFLoat</h1>
 
+    
+    <div class="text-sm antialiased opacity-60">
+      
+      <time>Sep 24, 2023</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
 
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">The differences between Float, Double, and CGFLoat</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 24, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/the-differences-between-float-double-and-cgfloat/">The differences between Float, Double, and CGFLoat</a>
+  <section><p>Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.</p>
+<p>The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:</p>
+<ul>
+<li>Floats are more efficient on memory usage, yet are less precise.</li>
+<li>Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy.</li>
+<li>CGFloats primary usage is for graphics and UI code. Since Swift 5.5 and onwards CGFloat and Double&rsquo;s can be used interchangeably.</li>
+</ul>
 </section>
 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Singltons: what are they and when to use one</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 23, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/what-is-a-singleton-and-when-to-use-one/">Singltons: what are they and when to use one</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Basic setup of a UIViewController in UIKit</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 19, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/">Basic setup of a UIViewController in UIKit</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Adding Constraints to Generics in Swift</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/adding-constraints-to-generics-in-swift/">Adding Constraints to Generics in Swift</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Circular Progress Animation</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/circular-progress-animation/">Circular Progress Animation</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Scrollable Gallaries in SwiftUI</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/scrollable-gallaries-in-swiftui/">Scrollable Gallaries in SwiftUI</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Understanding Protocols in Swift</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/understanding-protocols-in-swift/">Understanding Protocols in Swift</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Unit Testing within Swift Playground</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/unit-testing-within-swift-playground/">Unit Testing within Swift Playground</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Using Custom View Modifiers within SwiftUI</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/using-custom-view-modifiers-within-swiftui/">Using Custom View Modifiers within SwiftUI</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Using FocusState within SwiftUI</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Sep 17, 2023</time
-  >
-  <a class="absolute inset-0 text-[0]" href="//coryjpopp.com/posts/using-focusstate-within-swiftui/">Using FocusState within SwiftUI</a>
-</section>
-
-
-
-
-<nav class="mt-16 flex">
   
   
-  <a class="btn ml-auto" href="/posts/page/2/"
-    >Next Page →</a
-  >
+  <footer class="mt-12 flex flex-wrap">
+     
+    <a
+      class="mb-1.5 mr-1.5 rounded-lg bg-black/[3%] px-5 py-1.5 no-underline dark:bg-white/[8%]"
+      href="//coryjpopp.com/tags/swift"
+      >Swift</a
+    >
+    
+  </footer>
   
-</nav>
 
+  
+  
+  
+  
+  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
+    
+    
+    <a
+      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
+      href="//coryjpopp.com/posts/what-is-a-singleton-and-when-to-use-one/"
+      ><span>Singltons: what are they and when to use one</span><span class="ml-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+
+  
+  
+</article>
 
 
     </main>

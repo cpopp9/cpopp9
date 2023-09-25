@@ -6,7 +6,29 @@
     <description>Recent content in Posts on Learning w/ Swift</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//coryjpopp.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The differences between Float, Double, and CGFLoat</title>
+      <link>//coryjpopp.com/posts/the-differences-between-float-double-and-cgfloat/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/the-differences-between-float-double-and-cgfloat/</guid>
+      <description>Swift has three different data types to represent floating point numbers, which are numbers with a decimal points - each with their own characteristics and contexts in which they are used.
+The choice between Float, Double, and CGFloat depends on your specific use case, but some of the main differences are:
+Floats are more efficient on memory usage, yet are less precise. Doubles consume more memory than floats, but provide a wider range of representable values and greater accuracy.</description>
+    </item>
+    
+    <item>
+      <title>Singltons: what are they and when to use one</title>
+      <link>//coryjpopp.com/posts/what-is-a-singleton-and-when-to-use-one/</link>
+      <pubDate>Sat, 23 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//coryjpopp.com/posts/what-is-a-singleton-and-when-to-use-one/</guid>
+      <description>Singltons restrict a class to a single instance, and provide a global point of access to that instance.
+Singletons are:
+Ideal for managing a limited or shared resource, such as a database connection, thread pool, or configuration settings. Ideal for global state use cases, such as settings, preferences, or user authentification purposes. Often, but not always lazily initialized, and don&amp;rsquo;t actually get created until they are requested. Can be used for a centrilized place for logging, tracing, or monitoring.</description>
+    </item>
+    
     <item>
       <title>Basic setup of a UIViewController in UIKit</title>
       <link>//coryjpopp.com/posts/using-file-manager-to-find-assets-in-uikit/</link>
